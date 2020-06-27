@@ -39,7 +39,7 @@
                     <a class="nav-link" href="#conviertete-en-orador">Conviertete en Orador</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-platzi" href="#">Compra de Tickets</a>
+                    <a class="nav-link text-platzi"  data-toggle="modal" data-target="#modalCompra"  href="#modalCompra">Compra de Tickets</a>
                 </li>
             </ul>
             </div>
@@ -75,7 +75,7 @@
                                        tenemos para ti. Te esperamos!.
                                    </p>
                                    <a href="http:#" class="btn btn-outline-light">Quiero Ser Orador</a>
-                                   <button class="btn btn-platzi">Comprar Tickets</button>
+                                   <button  data-toggle="modal" data-target="#modalCompra" class="btn btn-platzi">Comprar Tickets</button>
                                 </div>
                             </div>
                     </div>
@@ -173,35 +173,9 @@
     </section>
     <!-- Lugar y Fecha - Inicio -->
 
-    <!-- Footer - Inicio -->
-    <footer id="footer" class="pb-4 pt-4">
-        <div class="container">
-            <div class="row text-center">
-                    <div class="col-12 col-lg">
-                        <a href="#">Preguntas Frecuentes</a>
-                    </div>
-                    <div class="col-12 col-lg">
-                        <a href="#">Contactanos</a>
-                    </div>
-                    <div class="col-12 col-lg">
-                        <a href="#">Prensa</a>
-                    </div>
-                    <div class="col-12 col-lg">
-                        <a href="#">Terminos y Condiciones</a>
-                    </div>
-                    <div class="col-12 col-lg">
-                        <a href="#">Privacidad</a>
-                    </div>
-                    <div class="col-12 col-lg">
-                        <a href="#">Estudiantes</a>
-                    </div>
-            </div>
-        </div>    
-    </footer>
-    <!-- Footer - Fin -->
-
+    
      <!-- Formulario - Inicio -->
-    <section id="conviertete-en-orador" class="pt-3 pb-3">
+     <section id="conviertete-en-orador" class="pt-3 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col text-uppercase text-center">
@@ -246,6 +220,75 @@
         </div>
     </section>
     <!-- Formulario- Fin -->
+
+
+    <!-- Footer - Inicio -->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                    <div class="col-12 col-lg">
+                        <a href="#">Preguntas Frecuentes</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Contactanos</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Prensa</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Terminos y Condiciones</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Privacidad</a>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <a href="#">Estudiantes</a>
+                    </div>
+            </div>
+        </div>    
+    </footer>
+    <!-- Footer - Fin -->
+
+
+
+    <!-- Modal - Inicio -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Ticket</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action=""">
+                  <div class="form-row">
+                      <div class="form-group col">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                      </div>
+                  </div>
+                </form>
+                  <!-- alerta - Inicio -->
+                  <div class="alert alert-warning" role="alert">
+                   Recibiras un correo de confirmacion
+                  </div>
+                  <!-- alerta - fin -->
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal - Fin -->
 
 
     <!-- Optional JavaScript -->
